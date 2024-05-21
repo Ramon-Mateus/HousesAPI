@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/HousesAPI/houses.sqlite3-shm
+/HousesAPI/houses.sqlite3-wal
