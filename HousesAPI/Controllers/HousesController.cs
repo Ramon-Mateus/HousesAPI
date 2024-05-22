@@ -18,5 +18,14 @@ namespace HousesAPI.Controllers
             var houses = _context.Houses.ToList();
             return houses;
         }
+
+        [HttpGet("{id}")]
+        public ActionResult<House> GetHouse(int id)
+        {
+            var house = _context.Houses.FirstOrDefault(house => house.Id == id);
+            
+            if (house == null) return NotFound();
+            return house;
+        }
     }
 }
